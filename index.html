@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Kartoonz — AI Chat</title>
+<style>
+  :root {
+    --bg: #05070b;
+    --bg2: #0a0d14;
+    --panel: #11151f;
+    --border: #1e2433;
+    --text: #e6e8ee;
+    --muted: #8a92a6;
+    --accent: #8b5cf6;
+    --accent2: #ec4899;
+    --ai-bubble: #141926;
+    --user-bubble: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+    --danger: #ef4444;
+    --success: #22c55e;
+  }
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Helvetica, Arial, sans-serif;
+    background: radial-gradient(1200px 800px at 70% -20%, rgba(139,92,246,.15), transparent 60%),
+                radial-gradient(800px 600px at -10% 20%, rgba(236,72,153,.12), transparent 50%),
+                var(--bg);
+    color: var(--text);
+    overflow: hidden;
+  }
+  /* ... rest of CSS from file ... */
+</style>
+</head>
+<body>
+  <!-- full HTML from the file above -->
+  <script>
+  /* ===== CONFIGURABLE DEFAULTS ===== */
+  const API_URL = 'YOUR_SERVER_URL'; // e.g. 'https://api.groq.com/openai/v1/chat/completions'
+  const API_KEY = 'YOUR_API_KEY';
+  const MODEL = 'gpt-3.5-turbo';
+  // ... rest of JS handles fetch, settings panel, chat UI ...
+  </script>
+</body>
+</html>
